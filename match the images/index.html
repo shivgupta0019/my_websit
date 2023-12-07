@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>match_the_images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <input type="text" id="text">
+        <button type="button" id="butt">submit</button>
+    </form>
+    <p id="pa"></p>
+    
+    <script >
+        let inp=document.querySelector("#text")
+        let but=document.querySelector("#butt")
+        let pa=document.querySelector("#pa")
+        let t;
+        inp.addEventListener('keypress',(e)=>{
+            console.log(e);
+            if(e.key === "Enter")
+            {
+                
+                pa.textContent=t;
+               
+            }
+            t=inp.value;
+           
+        })
+
+        // but.addEventListener('click', (e)=>{
+        //     console.log("this is clicked")
+        //     //alert("this is clicked")
+        //     console.log(inp.value);
+        //     console.log(e)
+        //     pa.textContent=inp.value;
+            
+
+        // })
+
+    </script>
+</body>
+</html>
